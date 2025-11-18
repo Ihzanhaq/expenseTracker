@@ -19,9 +19,17 @@ export const deleteExpense = async (id) => {
 };
 
 export const getBudget = async () => {
-  return await axiosConfig("get", "http://localhost:3000/budget/1", "");
+  return await axiosConfig(
+    "get",
+    "https://expense-backend-x9ze.onrender.com/1",
+    ""
+  );
 };
 
 export const patchBudget = async (reqBody) => {
-  return await axiosConfig("patch", "http://localhost:3000/budget/1", reqBody);
+  return await axiosConfig(
+    "patch",
+    "https://expense-backend-x9ze.onrender.com/1",
+    reqBody
+  );
 };
