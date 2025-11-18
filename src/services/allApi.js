@@ -1,6 +1,6 @@
 import axiosConfig from "./axiosConfig";
 
-const apiUrl = "http://localhost:3000/expense/";
+const apiUrl = "https://expense-backend-x9ze.onrender.com/";
 
 export const getExpense = async () => {
   return await axiosConfig("get", apiUrl, "");
